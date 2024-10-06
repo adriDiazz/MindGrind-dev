@@ -1,0 +1,96 @@
+{
+  "trendyPlatform": "LA PLATAFORMA DE ESTUDIO DE MODA",
+  "betterWay": "Potenciamos tu forma de",
+  "productive": "estudiar",
+  "withAI": "con IA",
+  "whatWeDo":{
+    "title": "¿Qué ofrecemos?",
+    "description1": {
+      "title": "Creación de Apuntes con IA",
+      "content": "Transforma tus videos y documentos en apuntes organizados con la ayuda de inteligencia artificial. Ahorra tiempo y mejora tu productividad."
+    },
+    "description2": {
+      "title": "Planificación de Estudios",
+      "content": "Organiza tus tareas y establece metas de estudio con la ayuda de nuestra plataforma. Recibe recordatorios y mantente enfocado en tus objetivos."
+    },
+    "description3": {
+      "title": "Generación de Exámenes con IA",
+      "content": "Genera exámenes personalizados automáticamente a partir de tu material de estudio. Evalúa tu conocimiento de manera eficiente."
+    },
+    "description4": {
+      "title": "Editor de Texto Inteligente",
+      "content": "Un editor de texto avanzado impulsado por IA que te ayuda a crear y organizar tus apuntes y resúmenes para un mejor estudio."
+    },
+    "description5": {
+      "title": "Creación y Compartición de Apuntes",
+      "content": "Crea apuntes detallados y organizados con IA y compártelos fácilmente con tus compañeros de clase para colaborar y mejorar juntos."
+    },
+    "description6": {
+      "title": "Gestión de Tiempo de Estudio",
+      "content": "Optimiza tu tiempo de estudio con la ayuda de nuestra plataforma. Recibe recomendaciones personalizadas y mejora tu eficiencia."
+    }
+  },
+  "Banner":{
+    "title": "¡Eleva tu forma de estudiar hoy!",
+    "description": "Preparado para transformar tu forma de estudiar? Regístrate ahora y comienza a disfrutar",
+    "button": "Comenzar"
+  },
+  "Pricing":{
+    "title": "Precios",
+    "description": "Elige el plan que mejor se adapte a tus necesidades y comienza a disfrutar de todas las ventajas de nuestra plataforma.",
+    "free": {
+      "title": "Uso individual",
+      "tier": "Plan gratuito",
+      "price": "Gratis",
+      "description": "Acceso a funciones básicas de la plataforma.",
+      "incluido": "Que incluye",
+      "funcion1": "Creación de apuntes con IA",
+      "funcion2": "Planificación de estudios",
+      "funcion3": "Generación de exámenes con IA",
+      "funcion4": "Editor de texto inteligente",
+      "funcion5": "Creación y compartición de apuntes",
+      "boton": "Comenzar"
+    },
+    "pro": {
+      "title": "Uso individual",
+      "tier": "Plan pro",
+      "price": "4,99€/mes",
+      "description": "Acceso a funciones avanzadas de la plataforma.",
+      "incluido": "Que incluye",
+      "funcion1": "Creación de apuntes con IA",
+      "funcion2": "Planificación de estudios",
+      "funcion3": "Generación de exámenes con IA",
+      "funcion4": "Editor de texto inteligente",
+      "funcion5": "Creación y compartición de apuntes",
+      "boton": "Comenzar"
+    },
+    "mindgrind": {
+      "title": "Uso individual",
+      "tier": "Plan mindgrind",
+      "price": "7,99€/mes",
+      "description": "Acceso total a las funciones de la plataforma.",
+      "incluido": "Que incluye",
+      "funcion1": "Creación de apuntes con IA",
+      "funcion2": "Planificación de estudios",
+      "funcion3": "Generación de exámenes con IA",
+      "funcion4": "Editor de texto inteligente",
+      "funcion5": "Creación y compartición de apuntes",
+      "boton": "Comenzar"
+    }
+  },
+  "FAQ": {
+    "title": "Preguntas frecuentes",
+    "questions": {
+      "whenReady": "¿Cuándo estará disponible la plataforma?",
+      "howHelp": "¿Cómo puede ayudarme la IA en mis estudios?",
+      "howInfo": "¿Cómo puedo estar informado sobre los avances de la plataforma?",
+      "howToCancelSubscription": "¿Cómo cancelar la suscripción?",
+      "howToChangePassword": "¿Cómo cambiar la contraseña?"
+    },
+    "answers": {
+      "whenReady": "Actualmente, solo está disponible nuestra landing page. Próximamente lanzaremos nuevas funcionalidades, así que mantente atento a nuestras actualizaciones para más información.",
+      "howHelp": "La inteligencia artificial puede ofrecerte recomendaciones personalizadas, organizar tus tareas, generar resúmenes de texto, y ayudarte a gestionar tu tiempo de estudio de manera más eficiente.",
+      "howInfo": "Puedes contactacor con el desarrollador a traves de instagram @adri.dev__"
+    }
+  }
+}

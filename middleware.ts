@@ -9,12 +9,14 @@ export async function middleware(request: NextRequest) {
   const sessionCookie = request.cookies.get('session');
   const isProtectedRoute = pathname.startsWith(protectedRoutes);
 
+  // Lógica de autenticación
   if (isProtectedRoute && !sessionCookie) {
     return NextResponse.redirect(new URL('/sign-in', request.url));
   }
 
   let res = NextResponse.next();
 
+  // Lógica de sesión: verificar y actualizar token si existe la cookie de sesión
   if (sessionCookie) {
     try {
       const parsed = await verifyToken(sessionCookie.value);
@@ -40,6 +42,25 @@ export async function middleware(request: NextRequest) {
     }
   }
 
+  // Lógica de internacionalización (idioma)
+  const localeFromCookie = request.cookies.get('locale')?.value;
+  let locale = localeFromCookie;
+
+  if (!locale) {
+    // Detectar el idioma desde los encabezados del navegador si no hay cookie de idioma
+    const localeFromHeaders = request.headers.get('accept-language')?.split(',')[0] || 'es';
+    locale = localeFromHeaders;
+
+    // Guardar el idioma en las cookies para futuras solicitudes
+    res.cookies.set({
+      name: 'locale',
+      value: locale,
+      path: '/',
+      maxAge: 60 * 60 * 24 * 30, // 30 días de duración
+    });
+  }
+
+  // Devuelve la respuesta final
   return res;
 }
 

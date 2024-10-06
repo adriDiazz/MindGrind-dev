@@ -1,0 +1,149 @@
+.container {
+    width: 100%;
+    height: 400px;
+    background-color: #7756F9;
+    border-radius: 8px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+   
+}
+
+.circulo {
+    width: 400px;
+    height: 115%;
+    border-radius: 100%;
+}
+
+.circulo1 {
+    position: absolute;
+    left: 300px;
+    background-image: linear-gradient(to right, #B9C6F6 0%, #7756F9 80%);
+    opacity: 0.37;
+}
+
+.circulo25 {
+    position: absolute;
+        left: 50px;
+        background-image: linear-gradient(to right, #B9C6F6 0%, #7756F9 100%);
+        z-index: -4;
+        height: 700px;
+}
+
+.circulo2 {
+    position: absolute;
+    left: -100px;
+    background-image: linear-gradient(to right, #B9C6F6 0%, #7756F9 100%);
+}
+
+.circulo3 {
+    position: absolute;
+    left: -300px;
+    background-image: linear-gradient(to right, #B9C6F6 0%, #7756F9 100%);
+}
+
+.texto {
+    position: relative;
+    z-index: 100;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+
+}
+
+.texto h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+.texto p {
+    margin: 5px 0 0;
+    font-size: 20px;
+}
+
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        height: 150px;
+    }
+
+    .circulo {
+        width: 150px;
+    }
+
+    .circulo1 {
+        left: 100px;
+    }
+
+    .circulo25 {
+        left: 25px;
+        height: 300px;
+    }
+
+    .circulo2 {
+        left: -40px;
+        height: 180px;
+        width: 150px;
+    }
+
+    .circulo3 {
+        left: -120px;
+        height: 180px;
+    }
+
+    .texto h1 {
+        font-size: 20px;
+    }
+
+    .texto p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        height: 120px;
+    }
+
+    .circulo {
+        width: 100px;
+    }
+
+    .circulo1 {
+        left: 50px;
+    }
+
+    .circulo25 {
+        left: 10px;
+        height: 200px;
+    }
+
+    .circulo2 {
+        left: -30px;
+        height: 140px;
+        width: 120px;
+    }
+
+    .circulo3 {
+        left: -100px;
+        height: 140px;
+    }
+
+    .texto h1 {
+        font-size: 18px;
+    }
+
+    .texto p {
+        font-size: 12px;
+    }
+}
