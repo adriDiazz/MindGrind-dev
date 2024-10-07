@@ -62,7 +62,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
       <div className="w-full">
         <button
-          className={`${buttonBgColor} ${buttonTextColor} font-bold text-lg mt-8 sm:mt-10 p-3 rounded-lg w-full`}
+          className={`${buttonBgColor} ${buttonTextColor} font-bold text-lg mt-8 sm:mt-10 p-3 rounded-lg w-full hover:bg-purple-blue-100`}
         >
           {buttonLabel}
         </button>
@@ -97,10 +97,10 @@ export const PricingSection: React.FC = () => {
     `${t("Pricing.mindgrind.funcion5")}`,
   ];
   return (
-    <section className="mt-48 p-5 md:p-0">
+    <section className="xl:mt-32 p-5 md:p-10 md:mt-32 xl:p-10" id="pricing">
       <div className="text-center">
         <h3
-          className="text-randomgrey font-extralight mb-32 sm:text-sm md:text-lg xl:text-[60px]"
+          className="text-randomgrey font-extralight xl:mb-32 mb-10 text-[30px] xl:text-[60px]"
           style={{
             fontFamily: "Plus Jakarta Sans",
           }}

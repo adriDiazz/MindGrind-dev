@@ -32,6 +32,7 @@ export default async function RootLayout({
     <html
       lang="en"
       className={`bg-white dark:bg-gray-950 text-black dark:text-white ${manrope.className}`}
+      style={{ scrollBehavior: "smooth" }}
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

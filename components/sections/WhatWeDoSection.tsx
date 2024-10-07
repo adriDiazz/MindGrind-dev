@@ -12,15 +12,10 @@ export const WhatWeDoSection = () => {
   const t = useTranslations();
 
   return (
-    <section
-      className=""
-      style={{
-        marginTop: "-103px",
-      }}
-    >
+    <section className="xl:mt-[-103px]" id="features">
       <div className="text-center">
         <h3
-          className="text-randomgrey font-extralight mb-32 sm:text-sm md:text-lg xl:text-[60px]"
+          className="text-randomgrey font-extralight mb-10 text-[30px] mt-10  md:text-[35px] xl:mb-32 xl:mt-0 xl:text-[60px] "
           style={{
             fontFamily: "Plus Jakarta Sans",
           }}
@@ -30,7 +25,7 @@ export const WhatWeDoSection = () => {
       </div>
 
       {/* Grid para las cards */}
-      <div className="hidden md:block">
+      <div className="hidden xl:block">
         <div
           className="parent max-w-7xl mx-auto hidden md:block"
           style={{
@@ -153,18 +148,17 @@ export const WhatWeDoSection = () => {
       </div>
 
       {/* Responsive */}
-      <div className="block md:hidden">
+      <div className="block xl:hidden">
         <div className="max-w-4xlxl p-5 mx-auto grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="bg-white p-6 rounded-lg shadow-lg">
             <div className="mb-4">
               <SunIcon />
             </div>
             <h4 className="font-bold text-lg mb-2 text-randomgrey">
-              Web Design
+              {t("whatWeDo.description2.title")}
             </h4>
             <p className="text-[#8987A1] font-extralight">
-              From concept to launch, we create stunning, user-centric websites
-              that elevate your brand and engage your audience.
+              {t("whatWeDo.description2.content")}
             </p>
           </div>
 
@@ -173,11 +167,10 @@ export const WhatWeDoSection = () => {
               <StarIcon />
             </div>
             <h4 className="font-bold text-lg mb-2 text-randomgrey">
-              Web Design
+              W{t("whatWeDo.description5.title")}
             </h4>
             <p className="text-[#8987A1]">
-              From concept to launch, we create stunning, user-centric websites
-              that elevate your brand and engage your audience.
+              {t("whatWeDo.description5.content")}
             </p>
           </div>
 
@@ -187,11 +180,10 @@ export const WhatWeDoSection = () => {
                 <MindGrindIcon />
               </div>
               <h4 className="font-bold text-lg mb-2 text-randomgrey">
-                Web Design
+                {t("whatWeDo.description1.title")}
               </h4>
               <p className="text-[#8987A1]">
-                From concept to launch, we create stunning, user-centric
-                websites that elevate your brand and engage your audience.
+                {t("whatWeDo.description1.content")}
               </p>
             </div>
 
@@ -205,11 +197,10 @@ export const WhatWeDoSection = () => {
               <ComputerIcon />
             </div>
             <h4 className="font-bold text-lg mb-2 text-randomgrey">
-              Web Design
+              {t("whatWeDo.description6.title")}
             </h4>
             <p className="text-[#8987A1]">
-              From concept to launch, we create stunning, user-centric websites
-              that elevate your brand and engage your audience.
+              {t("whatWeDo.description6.content")}
             </p>
           </div>
 
@@ -218,11 +209,10 @@ export const WhatWeDoSection = () => {
               <ConsoleIcon />
             </div>
             <h4 className="font-bold text-lg mb-2 text-randomgrey">
-              Web Design
+              {t("whatWeDo.description3.title")}
             </h4>
             <p className="text-[#8987A1]">
-              From concept to launch, we create stunning, user-centric websites
-              that elevate your brand and engage your audience.
+              {t("whatWeDo.description3.content")}
             </p>
           </div>
 
@@ -232,11 +222,10 @@ export const WhatWeDoSection = () => {
                 <BagIcon />
               </div>
               <h4 className="font-bold text-lg mb-2 text-randomgrey">
-                Web Design
+                {t("whatWeDo.description4.title")}
               </h4>
               <p className="text-[#8987A1]">
-                From concept to launch, we create stunning, user-centric
-                websites that elevate your brand and engage your audience.
+                {t("whatWeDo.description4.content")}
               </p>
             </div>
 

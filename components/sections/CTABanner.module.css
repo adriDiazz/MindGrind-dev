@@ -75,6 +75,7 @@
 @media (max-width: 768px) {
     .container {
         height: 150px;
+        flex-direction: column;
     }
 
     .circulo {
@@ -99,6 +100,10 @@
     .circulo3 {
         left: -120px;
         height: 180px;
+    }
+
+    .texto {
+        flex-direction: column;
     }
 
     .texto h1 {
@@ -137,6 +142,10 @@
     .circulo3 {
         left: -100px;
         height: 140px;
+    }
+
+    .texto {
+        padding: 0rem;
     }
 
     .texto h1 {

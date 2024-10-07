@@ -2,5 +2,95 @@
   "trendyPlatform": "TRENDIEST STUDYING PLATFORM",
   "betterWay": "A better way to keep",
   "productive": "productive",
-  "withAI": "with AI"
+  "withAI": "with AI",
+  "whatWeDo": {
+    "title": "What do we offer?",
+    "description1": {
+      "title": "AI-Powered Note Creation",
+      "content": "Turn your videos and documents into organized notes with the help of artificial intelligence. Save time and boost your productivity."
+    },
+    "description2": {
+      "title": "Study Planning",
+      "content": "Organize your tasks and set study goals using our platform. Get reminders and stay focused on your objectives."
+    },
+    "description3": {
+      "title": "AI-Powered Exam Generation",
+      "content": "Automatically generate personalized exams from your study material. Evaluate your knowledge efficiently."
+    },
+    "description4": {
+      "title": "Smart Text Editor",
+      "content": "An advanced AI-powered text editor that helps you create and organize your notes and summaries for better study."
+    },
+    "description5": {
+      "title": "Note Creation and Sharing",
+      "content": "Create detailed, organized notes with AI and easily share them with your classmates to collaborate and improve together."
+    },
+    "description6": {
+      "title": "Study Time Management",
+      "content": "Optimize your study time with the help of our platform. Get personalized recommendations and improve your efficiency."
+    }
+  },
+  "Banner": {
+    "title": "Elevate your studying!",
+    "description": "Ready to transform the way you study? Sign up now and start enjoying the benefits.",
+    "button": "Get Started"
+  },
+  "Pricing": {
+    "title": "Pricing",
+    "description": "Choose the plan that best suits your needs and start enjoying all the benefits of our platform.",
+    "free": {
+      "title": "For individual use",
+      "tier": "Free Plan",
+      "price": "Free",
+      "description": "Access to basic platform features.",
+      "incluido": "What's included",
+      "funcion1": "AI-Powered Note Creation",
+      "funcion2": "Study Planning",
+      "funcion3": "AI-Powered Exam Generation",
+      "funcion4": "Smart Text Editor",
+      "funcion5": "Note Creation and Sharing",
+      "boton": "Get Started"
+    },
+    "pro": {
+      "title": "For individual use",
+      "tier": "Pro Plan",
+      "price": "4.99€/month",
+      "description": "Access to advanced platform features.",
+      "incluido": "What's included",
+      "funcion1": "AI-Powered Note Creation",
+      "funcion2": "Study Planning",
+      "funcion3": "AI-Powered Exam Generation",
+      "funcion4": "Smart Text Editor",
+      "funcion5": "Note Creation and Sharing",
+      "boton": "Get Started"
+    },
+    "mindgrind": {
+      "title": "For individual use",
+      "tier": "Mindgrind Plan",
+      "price": "7.99€/month",
+      "description": "Full access to all platform features.",
+      "incluido": "What's included",
+      "funcion1": "AI-Powered Note Creation",
+      "funcion2": "Study Planning",
+      "funcion3": "AI-Powered Exam Generation",
+      "funcion4": "Smart Text Editor",
+      "funcion5": "Note Creation and Sharing",
+      "boton": "Get Started"
+    }
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "questions": {
+      "whenReady": "When will the platform be available?",
+      "howHelp": "How can AI help me in my studies?",
+      "howInfo": "How can I stay informed about the platform's progress?",
+      "howToCancelSubscription": "How do I cancel the subscription?",
+      "howToChangePassword": "How do I change the password?"
+    },
+    "answers": {
+      "whenReady": "Currently, only our landing page is available. We will be launching new features soon, so stay tuned for updates.",
+      "howHelp": "Artificial intelligence can offer you personalized recommendations, organize your tasks, generate text summaries, and help you manage your study time more efficiently.",
+      "howInfo": "You can contact the developer through Instagram @adri.dev__"
+    }
+  }
 }

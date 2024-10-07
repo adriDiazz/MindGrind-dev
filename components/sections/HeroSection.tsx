@@ -9,7 +9,7 @@ export const HeroSection = () => {
   return (
     <>
       {/* Sección del subtítulo con icono */}
-      <section>
+      <section id="product">
         <div className="flex w-full justify-center items-center gap-2 pt-8 sm:pt-14">
           <img src="/images/icon.png" alt="Icono" width={20} height={20} />
           <h2
@@ -24,7 +24,7 @@ export const HeroSection = () => {
 
         {/* Título principal */}
         <h1
-          className="mt-12 text-dark-grey-900 font-light text-center relative text-4xl mb-20 2xl:mb-0 sm:text-5xl md:text-6xl lg:text-[70px]"
+          className="mt-12 text-dark-grey-900 font-light text-center relative text-4xl mb-20 2xl:mb-0 sm:text-5xl p-4 md:text-6xl p-0 lg:text-[70px]"
           style={{
             fontFamily: "Playwrite US Modern",
             lineHeight: "1.2",
@@ -49,6 +49,7 @@ export const HeroSection = () => {
               width={1400} // Ancho ajustado para pantallas menores a 1650px
               height={1147}
               alt="Hero"
+              style={{ objectFit: "cover" }}
             />
           </div>
 

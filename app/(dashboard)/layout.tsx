@@ -2,23 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { CircleIcon, Home, LogOut } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { useUser } from "@/lib/auth";
 import { signOut } from "@/app/(login)/actions";
 import { useRouter } from "next/navigation";
-import HeaderImage from "@/components/svg/HeaderImage";
-import DrawingLine from "@/components/svg/DrawingLine";
 
 function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // Estado para abrir/cerrar el menú
   const { user, setUser } = useUser();
   const router = useRouter();
 
@@ -28,38 +17,44 @@ function Header() {
     router.push("/");
   }
 
+  function toggleMenu() {
+    setIsMenuOpen((prev) => !prev); // Cambiar el estado del menú
+  }
+
   return (
     <header className="border-b border-gray-200">
-      <div className="group relative flex w-full shrink-0 flex-wrap items-center justify-between bg-background py-7 px-4">
+      <div className="relative flex w-full shrink-0 flex-wrap items-center justify-between bg-background py-7 px-4">
         <div>
           <img src="/images/Logo.png" alt="MindGrind Logo" />
         </div>
+        {/* Links visibles en pantallas medianas y grandes */}
         <div className="hidden items-center justify-between gap-12 text-black md:flex">
           <Link
             className="text-sm font-medium text-dark-grey-900"
-            href="javascript:void(0)"
+            href="#product"
           >
             Product
           </Link>
           <Link
             className="text-sm font-medium text-dark-grey-900"
-            href="javascript:void(0)"
+            href="#features"
           >
             Features
           </Link>
           <Link
             className="text-sm font-medium text-dark-grey-900"
-            href="javascript:void(0)"
+            href="#pricing"
           >
             Pricing
           </Link>
           <Link
             className="text-sm font-medium text-dark-grey-900"
-            href="javascript:void(0)"
+            href="#company"
           >
             Company
           </Link>
         </div>
+        {/* Botones de inicio de sesión */}
         <div className="hidden items-center gap-8 md:flex">
           <button className="flex items-center text-sm font-medium text-black">
             Log In
@@ -68,10 +63,8 @@ function Header() {
             Sign Up
           </button>
         </div>
-        <button
-          // onclick="(() => { this.closest('.group').classList.toggle('open')})()"
-          className="flex md:hidden"
-        >
+        {/* Botón del menú móvil */}
+        <button onClick={toggleMenu} className="flex md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -85,35 +78,44 @@ function Header() {
             />
           </svg>
         </button>
-        <div className="absolute top-full flex max-h-0 w-full flex-col items-start justify-center gap-3 overflow-hidden rounded-2xl bg-white px-4 shadow-main transition-all duration-300 ease-in-out group-[.open]:max-h-64 group-[.open]:py-4 md:hidden">
+        {/* Menú móvil */}
+        <div
+          className={`absolute top-full left-0 right-0 z-10 flex flex-col items-start justify-center gap-3 overflow-hidden rounded-2xl bg-white px-4 shadow-main transition-all duration-300 ease-in-out md:hidden ${
+            isMenuOpen ? "max-h-64 py-4" : "max-h-0"
+          }`}
+        >
           <Link
             className="text-sm font-medium text-dark-grey-900"
-            href="javascript:void(0)"
+            href="#product"
+            onClick={() => setIsMenuOpen(false)} // Cierra el menú al hacer clic en un enlace
           >
             Product
           </Link>
           <Link
             className="text-sm font-medium text-dark-grey-900"
-            href="javascript:void(0)"
+            href="#features"
+            onClick={() => setIsMenuOpen(false)}
           >
             Features
           </Link>
           <Link
             className="text-sm font-medium text-dark-grey-900"
-            href="javascript:void(0)"
+            href="#pricing"
+            onClick={() => setIsMenuOpen(false)}
           >
             Pricing
           </Link>
           <Link
             className="text-sm font-medium text-dark-grey-900"
-            href="javascript:void(0)"
+            href="#company"
+            onClick={() => setIsMenuOpen(false)}
           >
             Company
           </Link>
           <button className="flex items-center text-sm font-medium text-black">
             Log In
           </button>
-          <button className="flex items-center rounded-xl bg-purple-blue-100 bg-purple-blue-100 px-4 py-2 text-sm font-medium text-purple-blue-500 text-purple-blue-600 transition hover:bg-opacity-80 focus:bg-opacity-70">
+          <button className="flex items-center rounded-xl bg-purple-blue-100 px-4 py-2 text-sm font-medium text-purple-blue-600 transition hover:bg-opacity-80 focus:bg-opacity-70">
             Sign Up
           </button>
         </div>

@@ -75,7 +75,10 @@ export const FAQ: React.FC<FAQProps> = () => {
   ];
 
   return (
-    <section className="mt-40 flex items-center justify-center max-w-7xl mx-auto">
+    <section
+      className="md:mt-40 flex items-center justify-center max-w-7xl mx-auto"
+      id="company"
+    >
       <div className="w-full">
         {faqs.map((faq, index) => (
           <FAQItem
